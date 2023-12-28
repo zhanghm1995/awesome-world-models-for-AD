@@ -1,9 +1,9 @@
 # Awesome-World-Models-for-AD :red_car:
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/zhanghm1995/awesome-world-models-for-AD)
 
-**NOTE**: Here we have contained the abstract and a main figure from the original paper presenting the main framework or motivations to help us take a glance about these papers (You can expand the **Abstract** button to see them).
-
 A curated list of awesome world models for autonomous driving (continually updated).
+
+**NOTE**: Here we have contained the abstract and a main figure from the original paper presenting the main framework or motivations to help us take a glance about these papers (You can expand the **Abstract** button to see them).
 
 ⭐ Welcome to star and contribute to (PR) this awesome world models for AD! ⭐
 
@@ -28,6 +28,14 @@ TODO.
     Understanding how the 3D scene evolves is vital for making decisions in autonomous driving. Most existing methods achieve this by predicting the movements of object boxes, which cannot capture more fine-grained scene information. In this paper, we explore a new framework of learning a world model, OccWorld, in the 3D Occupancy space to simultaneously predict the movement of the ego car and the evolution of the surrounding scenes. We propose to learn a world model based on 3D occupancy rather than 3D bounding boxes and segmentation maps for three reasons: 1) expressiveness. 3D occupancy can describe the more fine-grained 3D structure of the scene; 2) efficiency. 3D occupancy is more economical to obtain (e.g., from sparse LiDAR points). 3) versatility. 3D occupancy can adapt to both vision and LiDAR. To facilitate the modeling of the world evolution, we learn a reconstruction-based scene tokenizer on the 3D occupancy to obtain discrete scene tokens to describe the surrounding scenes. We then adopt a GPT-like spatial-temporal generative transformer to generate subsequent scene and ego tokens to decode the future occupancy and ego trajectory. Extensive experiments on the widely used nuScenes benchmark demonstrate the ability of OccWorld to effectively model the evolution of the driving scenes. OccWorld also produces competitive planning results without using instance and map supervision.
 
     <div align=center><img src="./assets/occworld.png" width="100%" /></div>
+    </details>
+
+- **TrafficBots: Towards World Models for Autonomous Driving Simulation and Motion Prediction**. [📄 Paper](https://arxiv.org/abs/2303.04116) | [💻 Code](https://github.com/zhejz/TrafficBots)
+    <details span>
+    <summary>Abstract</summary>
+    Data-driven simulation has become a favorable way to train and test autonomous driving algorithms. The idea of replacing the actual environment with a learned simulator has also been explored in model-based reinforcement learning in the context of world models. In this work, we show data-driven traffic simulation can be formulated as a world model. We present TrafficBots, a multi-agent policy built upon motion prediction and end-to-end driving, and based on TrafficBots we obtain a world model tailored for the planning module of autonomous vehicles. Existing data-driven traffic simulators are lacking configurability and scalability. To generate configurable behaviors, for each agent we introduce a destination as navigational information, and a time-invariant latent personality that specifies the behavioral style. To improve the scalability, we present a new scheme of positional encoding for angles, allowing all agents to share the same vectorized context and the use of an architecture based on dot-product attention. As a result, we can simulate all traffic participants seen in dense urban scenarios. Experiments on the Waymo open motion dataset show TrafficBots can simulate realistic multi-agent behaviors and achieve good performance on the motion prediction task.
+
+    <div align=center><img src="./assets/TrafficBots.png" width="100%" /></div>
     </details>
 
 - **GAIA-1: A Generative World Model for Autonomous Driving**. [📄 Paper](https://arxiv.org/abs/2309.17080)
