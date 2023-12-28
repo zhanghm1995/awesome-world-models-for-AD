@@ -1,7 +1,7 @@
 # Awesome-World-Models-for-AD :red_car:
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/zhanghm1995/awesome-world-models-for-AD)
 
-**NOTE**: Here we have contained the abstract and a main figure from the original paper presenting the main framework or motivations to help us take a glance about these papers (You can expand the **Abstract** button to see them). More papers list and details can be found in our survey paper 🎉.
+**NOTE**: Here we have contained the abstract and a main figure from the original paper presenting the main framework or motivations to help us take a glance about these papers (You can expand the **Abstract** button to see them).
 
 A curated list of awesome world models for autonomous driving (continually updated).
 
@@ -55,10 +55,12 @@ TODO.
     <div align=center><img src="./assets/ADriver-I.png" width="100%" /></div>
     </details>
 
-- **MUVO: A Multimodal Generative World Model for Autonomous Driving with Geometric Representations**. [📄 Paper](https://arxiv.org/abs/2311.11762).
+- **MUVO: A Multimodal Generative World Model for Autonomous Driving with Geometric Representations**. [📄 Paper](https://arxiv.org/abs/2311.11762)
     <details span>
     <summary>Abstract</summary>
     Learning unsupervised world models for autonomous driving has the potential to improve the reasoning capabilities of today's systems dramatically. However, most work neglects the physical attributes of the world and focuses on sensor data alone. We propose MUVO, a MUltimodal World Model with Geometric VOxel Representations to address this challenge. We utilize raw camera and lidar data to learn a sensor-agnostic geometric representation of the world, which can directly be used by downstream tasks, such as planning. We demonstrate multimodal future predictions and show that our geometric representation improves the prediction quality of both camera images and lidar point clouds.
 
     <div align=center><img src="./assets/MUVO.png" width="100%" /></div>
     </details>
+
+👆 [Back to Top](#Table-of-Content)
